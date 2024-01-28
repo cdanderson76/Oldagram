@@ -62,24 +62,24 @@ section .avatar {
 }
 
 .user-posting {
+  display: flex;
+  flex-direction: column;
   width: 375px;
   height: 55px;
   border-bottom: 1px solid #C6C6C6;
 }
 
 .text-slot, .text-slot2 {
-  display: inline-block;
   width: 307px;
   height: 15px;
-  border: 1px solid #C6C6C6;
 }
 
 .text-slot {
-  margin: 10px 0 0 55px;
+  margin: -40px 0 0 52px;
 }
 
 .text-slot2 {
-  margin: -15px 0 15px 55px;
+  margin-left: 52px;
 }
 
 .bold {
@@ -90,7 +90,6 @@ section .avatar {
 }
 
 .lighter {
-  display: inline-block;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -139,4 +138,5 @@ section .avatar {
 .small-icon-container img:focus {
   opacity: 0.5;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
